@@ -21,10 +21,10 @@ function total(liczba) {
         return promise;
     };
 
-    var number = liczba;
+    
 
     sendHttpRequest('POST', 'api.php', {
-        number: number,
+        number: liczba,
         total: result
     }).then(responseData => {
         result = responseData.total;
