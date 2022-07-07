@@ -10,7 +10,6 @@
     <script src="xhr.js" defer></script>
 </head>
 <body>
-   
     <?php $_GET = filter_input_array(INPUT_GET, FILTER_SANITIZE_NUMBER_INT);?>
         <div class="container">
         <div class = "screen"> <span id = "date"></span></div>

@@ -17,5 +17,5 @@ button{
     width: 300px;
 }
 .row{
-
+display: flex;
 }
