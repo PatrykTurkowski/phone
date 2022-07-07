@@ -1,11 +1,9 @@
 <?php
-if(isset($request_body)){
-
 
 $request_body = file_get_contents('php://input');
 $data = json_decode($request_body, true);
 filter_var($data, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
-
+if(isset($data['number'])){
 $number = $data['number'];
 if (isset($data['total'])) {
     $total = $data['total'];
@@ -23,5 +21,6 @@ $data = [
 echo json_encode($data);
 }else
 {
-    header('location:index.php');
+    http_response_code(400);
+    echo '400 - bad request';
 }
