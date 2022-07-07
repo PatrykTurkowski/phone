@@ -23,7 +23,7 @@ function total(liczba) {
 
     var number = liczba;
 
-    sendHttpRequest('POST', 'http://laravel.test/phone/api.php', {
+    sendHttpRequest('POST', 'api.php', {
         number: number,
         total: result
     }).then(responseData => {
