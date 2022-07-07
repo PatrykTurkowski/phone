@@ -10,9 +10,9 @@
     <script src="xhr.js" defer></script>
 </head>
 <body>
-    <?php $_GET = filter_input_array(INPUT_GET, FILTER_SANITIZE_NUMBER_INT);?>
+
         <div class="container">
-        <div class = "screen"> <span id = "date"></span></div>
+        <div class = "screen"> <input type="text" id = "date"></div>
         <div class = "buttons">
             <div class = "row">
                 <button onclick="total(1)" >1 </button>
@@ -34,19 +34,19 @@
                 <button onclick="total(0)" >0  </button>
                 <button onclick="total('#')" >#  </button>
             </div>
-           
-            
-            
-           
-            
-            
-            
+
+
+
+
+
+
+
         </div>
 
 
-            
+
         </div>
-        
+
 
 
 
