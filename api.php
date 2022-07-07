@@ -1,4 +1,6 @@
 <?php
+if(isset($request_body)){
+
 
 $request_body = file_get_contents('php://input');
 $data = json_decode($request_body, true);
@@ -19,3 +21,7 @@ $data = [
 ];
 
 echo json_encode($data);
+}else
+{
+    header('location:index.php');
+}
